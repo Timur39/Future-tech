@@ -207,35 +207,35 @@ svg * {
 @font-face {
   font-family: "Kubhn Sans";
   src: url("../fonts/KumbhSans-Medium.woff2") format("woff2");
-  font-family: 500;
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Regular.woff2") format("woff2");
-  font-family: 400;
+  font-weighty: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Medium.woff2") format("woff2");
-  font-family: 500;
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-SemiBold.woff2") format("woff2");
-  font-family: 600;
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Bold.woff2") format("woff2");
-  font-family: 700;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -294,12 +294,22 @@ svg * {
   }
 }
 
+html.is-lock {
+  overflow: hidden;
+}
+
 body {
   font-size: clamp(0.875rem, 0.7803398058rem + 0.3883495146vw, 1.125rem);
-  font-family: var(--font-family-base);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-base) sans-serif;
   letter-spacing: -0.03em;
   color: var(--color-gray-50);
   background-color: var(--color-dark);
+}
+
+main {
+  flex-grow: 1;
 }
 
 h1,
@@ -323,7 +333,7 @@ h2,
 .h2,
 h3,
 .h3 {
-  font-family: var(--font-family-accent);
+  font-family: var(--font-family-accent) sans-serif;
   font-weight: 500;
 }
 
@@ -528,9 +538,24 @@ button[aria-label]::before {
   width: 55%;
 }
 
+.header {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  animation-name: scrolling-header;
+  animation-fill-mode: both;
+  animation-timeline: scroll();
+  animation-range: 6.25rem 12.5rem;
+}
+@keyframes scrolling-header {
+  to {
+    box-shadow: 0 0 1rem 0 var(--color-dark-40);
+  }
+}
 .header__promo {
   padding-block: 1.25rem;
   text-align: center;
+  background-color: var(--color-dark);
   border-bottom: var(--border);
 }
 @media (width <= 47.99875rem) {

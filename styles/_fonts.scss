@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'Kubhn Sans';
   src: url('../fonts/KumbhSans-Medium.woff2') format('woff2');
-  font-family: 500;
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -17,7 +17,7 @@
 @font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter-Regular.woff2') format('woff2');
-  font-family: 400;
+  font-weighty: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -25,7 +25,7 @@
 @font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter-Medium.woff2') format('woff2');
-  font-family: 500;
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -33,7 +33,7 @@
 @font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter-SemiBold.woff2') format('woff2');
-  font-family: 600;
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -41,7 +41,7 @@
 @font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter-Bold.woff2') format('woff2');
-  font-family: 700;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
