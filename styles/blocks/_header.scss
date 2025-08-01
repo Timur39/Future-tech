@@ -75,8 +75,7 @@
       column-gap: rem(16);
 
       @include laptop {
-        column-gap: rem(6);
-        row-gap: 1rem;
+        gap: 1rem rem(6);
       }
 
       @include mobile {

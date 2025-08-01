@@ -32,8 +32,7 @@
           grid-column: -1 / 1;
 
           .footer__menu-list {
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-flow: row wrap;
             gap: rem(12)
           }
         }
