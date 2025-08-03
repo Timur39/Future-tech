@@ -32,7 +32,7 @@
   &__subtitle {
     @include fluid-text(30, 18);
 
-    font-family: var(--font-family-accent) sans-serif;
+    font-family: var(--font-family-accent) ;
     font-weight: 500;
     color: var(--color-dark-40);
 
