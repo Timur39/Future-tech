@@ -1097,11 +1097,6 @@ button[aria-label]::before {
     grid-template-columns: 1fr auto;
   }
 }
-@media (width <= 47.99875rem) {
-  .section__header-inner {
-    row-gap: 1.875rem;
-  }
-}
 .section__header-info {
   display: grid;
   align-items: start;
@@ -1395,6 +1390,12 @@ button[aria-label]::before {
   .blog-card__link {
     grid-area: link;
   }
+}
+
+.header,
+main > *:not(:last-child),
+.footer {
+  display: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */
