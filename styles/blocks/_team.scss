@@ -29,9 +29,8 @@
       border: rem(1) solid var(--color-dark-40);
     }
 
-
     &:not(:first-child) {
-      margin-left: calc(var(--personImageSize) / 4 * 1);
+      margin-left: calc(var(--personImageSize) / 4 * -1);
     }
   }
 }
