@@ -5,7 +5,6 @@
     padding-block: fluid(120, 40);
     background-color: var(--color-dark-10);
 
-
     &-inner {
       &:has(.section__link) {
         display: grid;
@@ -18,7 +17,7 @@
       }
 
       @include mobile {
-
+        row-gap: rem(30);
       }
     }
 
