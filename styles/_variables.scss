@@ -21,6 +21,7 @@
   --container-width: #{rem(1600)};
   --container-padding-x: #{rem(16)};
   --transition-duration: 0.2s;
+  --100vw: calc(100vw - var(--scrollbar-width));
   --border: #{rem(1)} solid var(--color-dark-15);
 
   @include laptop {

@@ -29,9 +29,5 @@
 @use 'blocks/bordered-grid';
 @use 'blocks/rating-view';
 @use 'blocks/review-card';
-
-.header,
-main > *:not(:last-child),
-.footer {
-  display: none !important;
-}
+@use 'blocks/about-card';
+@use 'blocks/about';
