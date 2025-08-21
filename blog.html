@@ -108,19 +108,21 @@
 
   <main>
     <section class="blog-details" aria-labelledby="blog-details-title">
-      <header class="blog-details__banner">
+      <header class="blog-details__banner"
+        style="--bgImg: url('../../images/blog-details/banner.jpg')"
+      >
         <div class="blog-details__banner-inner container">
-          <div class="blog-details__title" id="blog-details-title">The Rise of Artificial Intelligence in Healthcare</div>
+          <h1 class="blog-details__title" id="blog-details-title">The Rise of Artificial Intelligence in Healthcare</h1>
         </div>
       </header>
       <div class="blog-details__body">
         <div class="blog-details__body-inner container">
           <div class="blog-details__content">
-            <div class="blog-details__intro">
+            <div class="blog-details__intro full-vw-line full-vw-line--bottom full-vw-line--left">
               <h2 class="h6">Introduction</h2>
               <p>Artificial Intelligence (AI) has emerged as a transformative force in the healthcare industry, reshaping patient care, diagnostics, and research. In this blog post, we explore the profound impact of AI in healthcare, from revolutionizing diagnostic accuracy to enhancing patient outcomes.</p>
             </div>
-            <div class="blog-details__main">
+            <div class="blog-details__main expandable-content" data-js-expandable-content>
               <h2 class="h4">Artificial Intelligence (AI)</h2>
               <p>Artificial Intelligence (AI) has permeated virtually every aspect of our lives, and healthcare is no exception. The integration of AI in healthcare is ushering in a new era of medical practice, where machines complement the capabilities of healthcare professionals, ultimately improving patient outcomes and the efficiency of the healthcare system. In this blog post, we will delve into the diverse applications of AI in healthcare, from diagnostic imaging to personalized treatment plans, and address the ethical considerations surrounding this revolutionary technology.</p>
               <p>Artificial Intelligence (AI) has permeated virtually every aspect of our lives, and healthcare is no exception. The integration of AI in healthcare is ushering in a new era of medical practice, where machines complement the capabilities of healthcare professionals, ultimately improving patient outcomes and the efficiency of the healthcare system. In this blog post, we will delve into the diverse applications of AI in healthcare, from diagnostic imaging to personalized treatment plans, and address the ethical considerations surrounding this revolutionary technology.</p>
@@ -129,13 +131,17 @@
               <p>One of the most prominent applications of AI in healthcare is in diagnostic imaging. AI algorithms have demonstrated remarkable proficiency in interpreting medical images such as X-rays, MRIs, and CT scans. They can identify anomalies and deviations that might be overlooked by the human eye. This is particularly valuable in early disease detection. For instance, AI can aid radiologists in detecting minute irregularities in mammograms or identifying critical findings in chest X-rays, potentially indicative of life-threatening conditions.</p>
               <p>One of the most prominent applications of AI in healthcare is in diagnostic imaging. AI algorithms have demonstrated remarkable proficiency in interpreting medical images such as X-rays, MRIs, and CT scans. They can identify anomalies and deviations that might be overlooked by the human eye. This is particularly valuable in early disease detection. For instance, AI can aid radiologists in detecting minute irregularities in mammograms or identifying critical findings in chest X-rays, potentially indicative of life-threatening conditions.</p>
               <p>One of the most prominent applications of AI in healthcare is in diagnostic imaging. AI algorithms have demonstrated remarkable proficiency in interpreting medical images such as X-rays, MRIs, and CT scans. They can identify anomalies and deviations that might be overlooked by the human eye. This is particularly valuable in early disease detection. For instance, AI can aid radiologists in detecting minute irregularities in mammograms or identifying critical findings in chest X-rays, potentially indicative of life-threatening conditions.</p>
-              <button class="blog-details__read-full-button button" type="button">
-                <span class="icon icon--gray-arow-down">Read Full Blog</span>
+              <button
+                class="blog-details__read-full-button button expandable-content__button"
+                type="button"
+                data-js-expandable-content-button
+              >
+                <span class="icon icon--gray-arrow-down">Read Full Blog</span>
               </button>
             </div>
           </div>
           <div class="blog-details__info">
-            <div class="blog-details__actions blog-actions">
+            <div class="blog-details__actions blog-actions full-vw-line full-vw-line--bottom full-vw-line--right">
               <ul class="blog-actions__list">
                 <li class="blog-actions__item">
                   <button
@@ -184,7 +190,7 @@
                 </li>
               </ul>
             </div>
-            <div class="blog-details__summary summary">
+            <div class="blog-details__summary summary summary--2-cols">
               <dl class="summary__list">
                 <div class="summary__item">
                   <dt class="summary__key">Publication Date</dt>
@@ -204,7 +210,7 @@
                   <dt class="summary__key">Author Name</dt>
                   <dd class="summary__value">Dr. Emily Walker</dd>
                 </div>
-                <div class="summary__item">
+                <div class="summary__item summary__item--wide">
                   <dt class="summary__key">Table of Contents</dt>
                   <dd class="summary__value">
                     <div class="table-of-contents">
@@ -407,7 +413,59 @@
       </div>
     </section>
 
-
+    <section class="about" aria-labelledby="about-title">
+      <div class="about__inner container">
+        <header class="about__header">
+          <img
+            class="about__icon"
+            src="./images/about/icon.svg"
+            alt=""
+            width="150" height="150" loading="lazy"
+          />
+          <div class="about__info">
+            <p class="about__subtitle tag">Learn, Connect, and Innovate</p>
+            <h2 class="about__title" id="about-title">Be Part of the Future Tech Revolution</h2>
+          </div>
+          <div class="about__description">
+            <p>
+              Immerse yourself in the world of future technology. Explore our comprehensive resources, connect with fellow tech enthusiasts, and drive innovation in the industry. Join a dynamic community of forward-thinkers.
+            </p>
+          </div>
+        </header>
+        <ul class="about__list">
+          <li class="about__item">
+            <a  class="about-card tile" href="/" >
+              <h3 class="about-card__title circle-icon">Resource Access</h3>
+              <div class="about-card__description">
+                <p>
+                  Visitors can access a wide range of resources, including ebooks, whitepapers, reports.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="about__item">
+            <a  class="about-card tile" href="/" >
+              <h3 class="about-card__title circle-icon">Community Forum</h3>
+              <div class="about-card__description">
+                <p>
+                  Join our active community forum to discuss industry trends, share insights, and collaborate with peers.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="about__item">
+            <a  class="about-card tile" href="/" >
+              <h3 class="about-card__title circle-icon">Tech Events</h3>
+              <div class="about-card__description">
+                <p>
+                  Stay updated on upcoming tech events, webinars, and conferences to enhance your knowledge.
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
