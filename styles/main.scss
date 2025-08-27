@@ -40,9 +40,10 @@
 @use 'blocks/video-card';
 @use 'blocks/table-of-contents';
 @use 'blocks/blog-details';
+@use 'blocks/report-card';
 
-.header,
-main > *:not(:last-child),
-.footer {
-  display: none !important;
-}
+// .header,
+// main > *:not(:last-child),
+// .footer {
+//  display: none !important;
+// }
