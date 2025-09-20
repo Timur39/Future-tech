@@ -23,7 +23,6 @@
   --transition-duration: 0.2s;
   --100vw: calc(100vw - var(--scrollbar-width));
   --border: #{rem(1)} solid var(--color-dark-15);
-
   --shadow: 0 0 0 #{rem(4)} #191919;
 
   @include laptop {
